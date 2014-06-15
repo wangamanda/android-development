@@ -3,6 +3,7 @@ package com.example.task3;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -14,17 +15,22 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class WebService extends Activity implements OnClickListener{
 	private Button mbutton;
 	private String URL = "http://www.xmlfiles.com/examples/cd_catalog.xml";
+	ArrayAdapter<String> adapter;
+	private ArrayList<String> lArrayList = new ArrayList<String>();
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mbutton = (Button) this.findViewById(R.id.button1);
 		mbutton.setOnClickListener(this);
+		adapter = new ArrayAdapter<String>(this, R.id.mylist_view, lArrayList);
 	}
 
 	@Override
@@ -38,20 +44,26 @@ public class WebService extends Activity implements OnClickListener{
 		}
 	}
 	
-	class WebAsyncTask extends AsyncTask<Void, Void, String>{
+	class WebAsyncTask extends AsyncTask<Void, Void, ArrayList<String>>{
 
 		@Override
-		protected String doInBackground(Void... arg0) {
+		protected ArrayList<String> doInBackground(Void... arg0) {
 			// TODO Auto-generated method stub
 			return makeWebConnection();
 		}
 
+		private ListView lListView = (ListView)findViewById(R.id.list_view);
+		
 		@Override
-		protected void onPostExecute(String result){
+		protected void onPostExecute(ArrayList<String> result){
 			//ListView
+			lListView.setAdapter(adapter);
+			for (String item : result) {
+                adapter.add(item);
+            }
 		}
 		
-		private String makeWebConnection() {
+		private ArrayList<String> makeWebConnection() {
 			// TODO Auto-generated method stub
 			
 			try {
@@ -61,7 +73,7 @@ public class WebService extends Activity implements OnClickListener{
 				HttpResponse lHttpResponse = lHttpClient.execute(request);
 				
 				InputStream lInputStream = lHttpResponse.getEntity().getContent();
-				SaxParser.parseXML(lInputStream);
+				CustomSaxParser.parseXML(lInputStream);
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

@@ -42,4 +42,8 @@ public class SaxHandler extends DefaultHandler{
 		}
 		arr.add(xmlstructure);
 	}
+	
+	public ArrayList<XMLStructure> getData(){
+		return arr;
+	}
 }

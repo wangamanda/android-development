@@ -45,11 +45,16 @@ public class WebService extends Activity implements OnClickListener{
 	}
 	
 	class WebAsyncTask extends AsyncTask<Void, Void, ArrayList<String>>{
-
+		private ArrayList<String> res = new ArrayList<String>();
 		@Override
 		protected ArrayList<String> doInBackground(Void... arg0) {
 			// TODO Auto-generated method stub
-			return makeWebConnection();
+			ArrayList<XMLStructure> arr = makeWebConnection();
+			for(XMLStructure x:arr){
+				String s = x.getArtist()+"."+x.getTitle();
+				res.add(s);
+			}
+			return res;
 		}
 
 		private ListView lListView = (ListView)findViewById(R.id.list_view);
@@ -63,7 +68,7 @@ public class WebService extends Activity implements OnClickListener{
             }
 		}
 		
-		private ArrayList<String> makeWebConnection() {
+		private ArrayList<XMLStructure> makeWebConnection() {
 			// TODO Auto-generated method stub
 			
 			try {
@@ -71,10 +76,12 @@ public class WebService extends Activity implements OnClickListener{
 				HttpGet request = new HttpGet();
 				request.setURI(new URI(URL));
 				HttpResponse lHttpResponse = lHttpClient.execute(request);
+//				int lResponseCode = lHttpResponse.getStatusLine().getStatusCode();
+//				System.out.println(lResponseCode+"");
 				
 				InputStream lInputStream = lHttpResponse.getEntity().getContent();
-				CustomSaxParser.parseXML(lInputStream);
-				
+				ArrayList<XMLStructure> arr = CustomSaxParser.parseXML(lInputStream);
+				return arr;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

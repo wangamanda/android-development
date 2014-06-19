@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Third Task</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cloudeeva_text">Cloudeeva Android app</string>
+    <string name="cloudeeva_text2">This is class no 2</string>
+
+    <string-array name="test">
+        <item name="ram">RED</item>
+        <item name="sam">GREEN</item>
+        <item name="blue">BLUE</item>
+    </string-array>
+    
+     <string-array name="test_values">
+        <item name="ram">00056</item>
+        <item name="sam">00076</item>
+        <item name="blue">00086</item>
+    </string-array>
+
+</resources>

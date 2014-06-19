@@ -1,0 +1,10 @@
+<resources>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme">
+    </style>
+    
+    <color name ="purple">#800080</color>
+
+</resources>

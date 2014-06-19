@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PatriK</string>
+    <string name="hello_world">Bonjour tout le monde!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cloudeeva_text">Cloudeeva Android app</string>
+     <string name="cloudeeva_text2">This is class no 2</string>
+
+</resources>

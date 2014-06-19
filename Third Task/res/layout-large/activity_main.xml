@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/my_edittext"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_button"
+        android:text="click me" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/my_textview"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/cloudeeva_text2"
+        android:textSize="40sp" />
+
+</LinearLayout>

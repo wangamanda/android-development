@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Expenses</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="expenses">Expenses</string>
+	<string name="welcome">Login to Expenses</string>
+	<string name="username">Username:</string>
+	<string name="putusername">Enter username here</string>
+	<string name="password">Password:</string>
+	<string name="putpassword">Enter password here</string>
+</resources>

@@ -4,10 +4,17 @@
     <string name="app_name">Expenses</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="expenses">Expenses</string>
-	<string name="welcome">Login to Expenses</string>
-	<string name="username">Username:</string>
-	<string name="putusername">Enter username here</string>
-	<string name="password">Password:</string>
-	<string name="putpassword">Enter password here</string>
+    
+    
+    <string name="spalsh_text">Expenses</string>
+    <string name="login_title">LOGIN TO YOUR ACCOUNT</string>
+    <string name="username">Username:</string>
+    <string name="username_hint">Your username here</string>
+    <string name="password">Password:</string>
+    <string name="password_hint">Your Password here</string>
+    <string name="login">LOGIN</string>
+    
+    <string name="error_username">Please enter the Username</string>
+    <string name="error_password">Please enter the Password</string>
+
 </resources>

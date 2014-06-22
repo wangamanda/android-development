@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+	<TextView
+	    android:id="@+id/login_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="15sp"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/welcome"
+	    />
+	
+	<TextView
+	    android:id="@+id/username_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/username"
+	    />
+	
+	<EditText
+	    android:id="@+id/edit_name"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:hint="@string/putusername"
+	    />
+	
+	<TextView
+	    android:id="@+id/password_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/password"
+	    />
+	
+	<EditText
+	    android:id="@+id/edit_password"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:password="true"
+	    android:hint="@string/putpassword"
+	    />
+	
+	<Button
+	    android:id="@+id/my_button"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#00b3b3"
+	    android:text="@string/button1"
+	    />
+</LinearLayout>

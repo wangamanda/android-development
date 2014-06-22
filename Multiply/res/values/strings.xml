@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Multiply</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="multiple">MULTIPLIES</string>
+	<string name="submit">SUBMIT</string>
+	<string name="activity">result</string>
+</resources>

@@ -7,4 +7,6 @@
 	<string name="multiple">MULTIPLIES</string>
 	<string name="submit">SUBMIT</string>
 	<string name="activity">result</string>
+	<string name="exit">EXIT</string>
+	<string name="about">ABOUT</string>
 </resources>

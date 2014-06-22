@@ -3,6 +3,8 @@ package com.example.multiply;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -24,6 +26,23 @@ public class MainActivity extends ActionBarActivity {
 		Button myButton = (Button)findViewById(R.id.my_button);
 		
 		myButton.setOnClickListener(new buttonClickListener());
+	}
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		menu.add(0, 1, 1, R.string.exit);
+		menu.add(0, 2, 2, R.string.about);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item){
+		if(item.getItemId() == 1){
+			finish();
+		}
+		return super.onOptionsItemSelected(item);
 	}
 	
 	class buttonClickListener implements OnClickListener{

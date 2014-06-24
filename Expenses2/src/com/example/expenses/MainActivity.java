@@ -24,8 +24,9 @@ public class MainActivity extends Activity {
 	
 	public void login(){
 		lIntent = new Intent();
-		lIntent.setClass(this, LoginActivity.class);
-		startActivity(lIntent);
+		lIntent.setClass(MainActivity.this, LoginActivity.class);
+		MainActivity.this.startActivity(lIntent);
+		finish();
 	}
 	
 	protected void initUI(){

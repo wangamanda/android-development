@@ -56,4 +56,6 @@
 	    android:background="#00b3b3"
 	    android:text="@string/button1"
 	    />
+	
+
 </LinearLayout>

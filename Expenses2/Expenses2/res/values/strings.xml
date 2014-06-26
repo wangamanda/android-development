@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Expenses</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="expenses">Expenses</string>
+	<string name="welcome">Login to Expenses</string>
+	<string name="username">Username:</string>
+	<string name="putusername">Enter username here</string>
+	<string name="password">Password:</string>
+	<string name="putpassword">Enter password here</string>
+	<string name="button1">LOGIN</string>
+	<string name="showscreen">SHOW SCREEN</string>
+	<string name="textSpinner1">Submission Date</string>
+	<string name="textSpinner2">Expense Type</string>
+	<string name="textSpinner3">Client Name</string>
+	<string name="textSpinner4">Client Address</string>
+	<string name="textSpinner5">Details</string>
+	<string name="textSpinner6">Amount</string>
+	<string name="textButton">Upload Invoice</string>
+</resources>

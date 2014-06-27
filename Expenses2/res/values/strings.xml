@@ -11,5 +11,12 @@
 	<string name="password">Password:</string>
 	<string name="putpassword">Enter password here</string>
 	<string name="button1">LOGIN</string>
-	
+	<string name="showscreen">SHOW SCREEN</string>
+	<string name="textSpinner1">Submission Date</string>
+	<string name="textSpinner2">Expense Type</string>
+	<string name="textSpinner3">Client Name</string>
+	<string name="textSpinner4">Client Address</string>
+	<string name="textSpinner5">Details</string>
+	<string name="textSpinner6">Amount</string>
+	<string name="textButton">Upload Invoice</string>
 </resources>

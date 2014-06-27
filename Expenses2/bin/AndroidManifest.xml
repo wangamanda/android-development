@@ -25,11 +25,18 @@
         </activity>
         <activity
             android:name="com.example.expenses.LoginActivity"
+            android:configChanges="orientation|screenSize"
             >
             </activity>
             <activity
             android:name="com.example.expenses.ExpenseActivity"
+            android:configChanges="orientation|screenSize"
             >
+            </activity>
+            <activity 
+                android:name="com.example.expenses.ShowActivity"
+                >
+         		
             </activity>
     </application>
 
